@@ -1,15 +1,20 @@
 // Text rendering place
 let maindiv = document.getElementById('maindiv').innerHTML;
 
-console.log(maindiv)
+let duckFrame = document.getElementsByClassName('duckFrame')[0].innerHTML;
 
-// top left corner of the animation
-let tlRow = 11
-let tlCol = 23
+// console.log(maindiv)
+console.log(duckFrame)
 
-// bottom right corner of the animation
-let brRow = 25
-let brCol = 59
+// // top left corner of the animation
+// let tlRow = 11-11
+// let tlCol = 23-11
+let tlRow = 3
+let tlCol = 2
+
+// // bottom right corner of the animation
+let brRow = 17
+let brCol = 38
 
 let tWidth =  brCol-tlCol;
 let tHeight = brRow-tlRow;
@@ -49,15 +54,10 @@ function toAsciiChar(brightness) {
   return chars[index]
 }
 
-//
-document.getElementById('maindiv').innerHTML = maindiv;
-
 
 // duck model "Cartoony Rubber Ducky" by Xabier Garcia on sketchfab 
 // https://sketchfab.com/3d-models/cartoony-rubber-ducky-8a6e661916b74f9caa1c20dd6fdf77ad
 
-// white clouds on blue sky by Miguel Á. Padriñán
-// https://www.pexels.com/photo/white-clouds-on-blue-sky-19670/ 
 
 let w = 400;
 let h = 400;
@@ -72,7 +72,7 @@ function setup() {
     pixelDensity(1)
     // createCanvas(w, h, WEBGL);
     hcanv = createCanvas(w, h, WEBGL);
-    hcanv.position(690, 340);
+    hcanv.position(760, 340);
 }
 
 function draw() {
@@ -124,16 +124,16 @@ function draw() {
 
       img.updatePixels();
 
-      
       for(var x=tlRow;x<brRow;x++){
         for(var y=tlCol;y<brCol;y++){
           let i = x-tlRow;
           let j = y-tlCol;
 
           let the_char = toAsciiChar(img.pixels[(i*tWidth + j)*4])
-          maindiv = replaceChar(maindiv, the_char, x, y)
+          duckFrame = replaceChar(duckFrame, the_char, x, y)
+          console.log(duckFrame)
         }
       }
-      document.getElementById('maindiv').innerHTML = maindiv;
+      document.getElementsByClassName('duckFrame')[0].innerHTML = duckFrame;
 }
 

@@ -65,6 +65,9 @@
     a.t {
       color:  #9E788F  
     }
+    a.link{
+      color:rgb(223, 204, 183)
+    }
     
     .button2 {
       font-family: Consolas, sans-serif;
@@ -80,11 +83,14 @@
         width: 38%
     }
 
-    div.maindiv, div.rightpic {display: inline-block; zoom: 1; vertical-align: top; font-size: 16px;}
+    div.maindiv, div.rightpics {display: inline-block; zoom: 1; vertical-align: top; font-size: 16px;}
 
-    /* div.maindiv {
-
-    } */
+    div.duckFrame {
+      display:inline-block;
+      position:relative;
+      top: -3232px;
+      left: 185px;
+    }
   </style>
 </head>
 <body style="background-color:rgb(39, 36, 34);">
@@ -106,32 +112,32 @@
       │                <i>welcome to my website!</i>                 │        
       |                                                       |        
       ├────────────┬──────────────────────────────────────────┤        
-      │  Duck      │                                          │         
+      │  <a href="#duck" class="link">Duck</a>      │                                          │         
       ├────────────┤                                          │        
-      │  Home      │                                          │        
+      │  <a href="#duck" class="link">Home</a>      │                                          │        
       ├────────────┤                                          │        
-      │  About me  │                                          │        
+      │  <a href="#aboutme" class="link">About me</a>  │                                          │        
       ├────────────┤                                          │        
-      │  Other     │                                          │        
+      │  <a href="#other" class="link">Other</a>     │                                          │        
       ├────────────┤                                          │        
-      │  Credits   │                                          │        
+      │  <a href="#credits" class="link">Credits</a>   │                                          │        
       ├────────────┤                                          │        
       │            │                                          │        
       │            │                                          │        
       │            │                                          │        
       │            │                                          │        
       │            │                                          │        
-      │            │                                          │<a id="pee"></a>        
+      │            │                                          │<a id="duck"></a>        
       ├────────────┴──────────────────────────────────────────┤
       |  Home         The duck is home.                       |        
-      │                                                       │
+      │                                                       │<a id="aboutme"></a>
       ├───────────────────────────────────────────────────────┤
       |  About me     Name ------ stormlet, aka cune          |
       |               Pronouns -- any, usually he/him         |
-      |               Orinttn. -- straight, single ;)         |
-      |               Type ------ intp LII sx/sp 594          |
+      |               Prsnlty. -- intp LII sx/sp 594          |
       |                    +----- I promise I'm not that      |
       |                    +----- nerd emoji (maybe a lil)    |
+      |               Orinttn. -- straight, single ;)         |
       |               Intrsts. -- computer science            |
       |                    +----- dancing                     |
       |                    +----- music (writing, guitar)     |
@@ -151,10 +157,10 @@
       │                    +----- Breakbot                    │
       │                    +----- Michael Jackson             │
       │                    +----- U2                          │
-      │                                                       │
+      │                                                       │<a id="other"></a>
       ├───────────────────────────────────────────────────────┤
       |  Other        Discord --- stormlet                    |      
-      │                                                       │
+      │                                                       │<a id="credits"></a>
       ├───────────────────────────────────────────────────────┤
       |  Credits      Website by me!!                         |        
       │                                                       │
@@ -251,6 +257,26 @@
       ╘═══════════════════════════════════════════════════════╛
                                                                        
 
+      </pre>
+    </div>
+    <div class="duckFrame">
+      <pre class="a">
+                                       
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
       </pre>
     </div>
   <script src="hiddencanvas.js"></script>
