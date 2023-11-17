@@ -131,7 +131,6 @@ function draw() {
 
           let the_char = toAsciiChar(img.pixels[(i*tWidth + j)*4])
           duckFrame = replaceChar(duckFrame, the_char, x, y)
-          console.log(duckFrame)
         }
       }
       document.getElementsByClassName('duckFrame')[0].innerHTML = duckFrame;
