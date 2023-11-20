@@ -10,7 +10,7 @@ console.log(duckFrame)
 // let tlRow = 11-11
 // let tlCol = 23-11
 let tlRow = 3
-let tlCol = 2
+let tlCol = 3
 
 // // bottom right corner of the animation
 let brRow = 17
