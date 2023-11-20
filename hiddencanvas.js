@@ -72,7 +72,7 @@ function setup() {
     pixelDensity(1)
     // createCanvas(w, h, WEBGL);
     hcanv = createCanvas(w, h, WEBGL);
-    hcanv.position(760, 340);
+    hcanv.position(795, 340);
 }
 
 function draw() {
